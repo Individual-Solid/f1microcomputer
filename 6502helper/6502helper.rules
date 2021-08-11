@@ -1,0 +1,85 @@
+
+(rules PCB 6502helper
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 4656)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND +5V IO19 IO18 IO17 IO16 IO15 IO14
+    IO13 IO12 IO11 IO10 IO9 IO8 IO7 IO6
+    IO5 IO4 IO3 IO2 IO1 IO0 ~RESET~ ~NMI~
+    ~IRQ~ Sync R~W~ CLK "Net-(R1-Pad1)" "Net-(R2-Pad1)" /A11 /A10
+    /A9 /A8 /A7 /A6 /A5 /D0 /A4 /D1
+    /A3 /D2 /A2 /D3 /A1 /D4 /A0 /D5
+    /D6 /D7 /A15 /A14 /A13 /A12 /~RAMSEL~ /~ROMSEL~
+    /~IOSEL~ IO39 IO38 IO37 IO36 IO35 IO34 IO33
+    IO32 IO31 IO30 IO29 IO28 IO27 IO26 IO25
+    IO24 IO23 IO22 IO21 IO20
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

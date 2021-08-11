@@ -1,0 +1,38 @@
+Source,C:\Users\cdcar\Desktop\kicad\6502helper\6502helper.sch
+Kicad Rev,Eeschema (5.1.10)-1
+Generated Date,7/4/2021 2:30:33 PM
+
+Title,F-1
+Company,Individual Solid
+Revision,Not Set
+Date Issue,2021-06-23
+
+Reference,Value,Library,Library Ref
+R1,3.3kOhm,Device,R_Small
+R2,3.3kOhm,Device,R_Small
+U6,W65C22SxP,MCU_65xx,W65C22SxP
+U3,28C256,Memory_EEPROM,28C256
+U2,74HC00,74xx,74HC00
+SW1,SW_Push,Switch,SW_Push
+U4,DS1813,DS1813,DS1813
+X1,1MHz,6502helper-rescue,CXO_DIP14-Oscillator_Can
+C2,0.1uF,Device,C
+C1,0.1uF,Device,C
+C3,0.1uF,Device,C
+J2,IO Port 1,Connector_Generic,Conn_02x07_Odd_Even
+J1,IO Port 2,Connector_Generic,Conn_02x07_Odd_Even
+U1,W65C02SxP,MCU_65xx,W65C02SxP
+U5,CY7C199,Memory_RAM,CY7C199
+C5,.01uF,Device,C
+C6,.01uF,Device,C
+C7,.01uF,Device,C
+C8,.01uF,Device,C
+C10,.01uF,Device,C
+C9,.01uF,Device,C
+J4,Control Bus Port,Connector_Generic,Conn_01x06
+J3,Regulated 5V In,Connector,Screw_Terminal_01x02
+R3,3.3kOhm,Device,R_Small
+R4,3.3kOhm,Device,R_Small
+C4,CP1,Device,CP1
+U7,W65C22SxP,MCU_65xx,W65C22SxP
+J5,IO Port 3/4,Connector_Generic,Conn_01x20

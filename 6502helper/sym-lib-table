@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name DS1813)(type Legacy)(uri ${KIPRJMOD}/DS1813.lib)(options "")(descr ""))
+  (lib (name 6502helper-rescue)(type Legacy)(uri ${KIPRJMOD}/6502helper-rescue.lib)(options "")(descr ""))
+)

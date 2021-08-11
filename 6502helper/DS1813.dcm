@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS1813
+D 5V EconoReset with Pushbutton
+K reset supervisor
+F https://datasheets.maximintegrated.com/en/ds/DS1813.pdf
+$ENDCMP
+#
+#End Doc Library
