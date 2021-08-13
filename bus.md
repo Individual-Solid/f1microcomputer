@@ -48,12 +48,12 @@ exclusive signals.
 |39|EX2|EX2|U3||
 |40|GND|EX3|U4|Another GND line never hurt anyone.|
 
-Next to the bus on the mainboard are jumpers for the following signals, allowing
+Next to the bus on the mainboard (Garth-1 based) are jumpers for the following signals, allowing
 easy assignment to an EX line on the Bus, or for direct jumping to another board.
 
 |Pin|Signal|
 |-|-|
-|1|/ML|
+|1|SYNC|
 |2|/VP|
 |3|/SO|
 |4|/IOSEL|
