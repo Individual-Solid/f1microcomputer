@@ -25,11 +25,11 @@ exclusive signals.
 |16|A0|A0|A0||
 |17|GND|GND|GND||
 |18|VCC|VCC|VCC||
-|19|/MLB|PHI2O|/M1|See CLK for why it's not PHI2O. 6502 has no /M1. This could be SYNC, but /MLB is more interesting for DMA|
+|19|/ML|PHI2O|/M1|See CLK for why it's not PHI2O. 6502 has no /M1. This could be SYNC, but /MLB is more interesting for DMA|
 |20|/RESET|/RESET|/RESET||
 |21|CLK|PHI0I|CLK|Using PHI1 in and PHI2 out is not supported for the new W65c22 chips used in the Eater kit. Just using PHI2 as CLK opens up an additional signal.|
 |22|/IRQ|/IRQ|/INT||
-|23|/BE|PHI1I (but really,EX0)|/MREQ|Dedicated /BE line for DMA|
+|23|BE|PHI1I (but really,EX0)|/MREQ|Dedicated /BE line for DMA|
 |24|RWB|RWB|/WR||
 |25|RDY|RDY|/RD||
 |26|EX0|SYNC|/IOREQ|SYNC on the bus isn't particularly useful, compared to having an easy EX pin which you can easily connect to /IOEN|
