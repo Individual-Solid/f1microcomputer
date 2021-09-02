@@ -1,7 +1,11 @@
+# s50Bus
+
+Based on the [Z50Bus](http://linc.no/products/z50bus/) but modified for "synchronous" bus architectures (like the 6502) instead of an async bus (like the z80 and 8080). Primary differences are the control signals from the CPU, and more GND returns added throughout the connector. Otherwise, this bus will use the physical connector and card shapes described in the Z50 bus.
+
 |pin|fn|fn|pin|
-|--|-|--|--|---|
+|--|--|--|---|
 |1	|A0|	A1|	2|
-|3	|GND|	|A2	|4|
+|3	|GND|	A2	|4|
 |5	|A3	|A4	|6|
 |7	|A5	|A6	|8|
 |9	|A7	|GND|	10|
